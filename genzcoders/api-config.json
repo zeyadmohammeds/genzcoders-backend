@@ -1,0 +1,40 @@
+{
+  "baseUrl": "http://localhost:5166",
+  "baseUrlHttps": "https://localhost:7237",
+  "endpoints": {
+    "auth": {
+      "register": "/api/auth/register",
+      "login": "/api/auth/login",
+      "me": "/api/auth/me"
+    },
+    "application": {
+      "getAll": "/api/Application",
+      "getById": "/api/Application/{id}",
+      "create": "/api/Application",
+      "update": "/api/Application/{id}",
+      "updateStatus": "/api/Application/{id}",
+      "ping": "/api/Application/ping"
+    },
+    "course": {
+      "getAvailable": "/api/Course/available",
+      "getById": "/api/Course/{id}",
+      "create": "/api/Course",
+      "update": "/api/Course/{id}",
+      "patch": "/api/Course/{id}",
+      "delete": "/api/Course/{id}"
+    },
+    "courseRound": {
+      "getAll": "/api/CourseRound",
+      "getById": "/api/CourseRound/{id}",
+      "create": "/api/CourseRound",
+      "update": "/api/CourseRound/{id}",
+      "patch": "/api/CourseRound/{id}",
+      "delete": "/api/CourseRound/{id}"
+    },
+    "health": "/api/Health"
+  },
+  "headers": {
+    "contentType": "application/json",
+    "accept": "application/json"
+  }
+}
